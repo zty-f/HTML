@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单拓展学习</title>
+</head>
+<body>
+
+<!--placeholder:提示信息
+required:非空判断
+pattern:正则表达式
+-->
+<form action="1.第一个网页.html" method="get">
+<p>名字：<input type="text" name="username" placeholder="请输入用户名"></p>
+<!--密码框：<input type="password" name="pwd">-->
+<p>密码：<input type="password" name="pwd"  required></p>
+
+<p>自定义邮箱:
+    <input type="text" name="diymail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+</p>
+
+    <input type="submit">
+    <input type="reset" value="清空表单">
+
+</form>
+
+
+</body>
+</html>
